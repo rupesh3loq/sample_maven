@@ -38,7 +38,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/rupesh3loq/simple-java-maven-app</url>
+      <url>https://maven.pkg.github.com/rupesh3loq/simple_maven</url>
     </repository>
   </distributionManagement>
 </project>
