@@ -4,8 +4,7 @@
 name: Maven Package
 
 on:
-  release:
-    types: [created]
+  push
 
 jobs:
   build:
@@ -25,6 +24,6 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn -B deploy 
+      run: mvn -B deploy -s settings.xml
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
