@@ -6,6 +6,9 @@ name: Maven Package
 on:
   push
 
+env:
+  MAIN_VER: 1
+
 jobs:
   build:
 
